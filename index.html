@@ -41,16 +41,16 @@ body {
   </nav>
   <br><br> <br>
   <div class="container">
-    <h4>Enter your email!</h4>
+    <h4>Enter your unique passphrase!</h4>
     <form class="form-horizontal" role="form">
       <div class="form-group">
         <div class="col-sm-10">
-          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <input type="passphrase" class="form-control" id="passphrase" placeholder="Enter passphrase">
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="button" class="btn btn-default" onclick="setEmail()">Submit</button>
+          <button type="button" class="btn btn-default" onclick="setChannell()">Submit</button>
         </div>
       </div>
     </form>
@@ -59,7 +59,7 @@ body {
   <script>
 var channel = '';
 
-function setEmail() {
+function setChannell() {
   channel = document.forms[0].elements[0].value;
   alert('U are now Tracking your friend!');
   var map = eon.map({
